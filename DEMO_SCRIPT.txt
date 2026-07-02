@@ -1,0 +1,27 @@
+[0:00 — HOOK]
+Imagine a sudden household crisis, like a gas leak or fire, and realizing that your family doesn't know who to call or what to do first. The Family Emergency Drill Agent solves this by helping families simulate and practice structured, safe emergency responses to ensure they are prepared for real-world emergencies.
+
+[0:20 — WHAT IT IS]
+This agent is built on the ADK 2.0 framework and belongs to the Concierge Agents track. It acts as an interactive emergency coordinator that walks a family through drill scenarios, checks critical safety protocols, and logs drill outcomes.
+
+[0:40 — SHOW THE BANNER]
+(show assets/cover_page_banner.png)
+As you can see on the banner, the Family Emergency Drill Agent is designed to be intelligent, secure, and personalized, offering a direct path to drill simulation.
+
+[1:00 — ARCHITECTURE]
+(show assets/architecture_diagram.png)
+Our architecture begins with the user's input hitting the Security Checkpoint function node, which scrubs PII and checks for prompt injections. From there, off-topic inputs go to the security event handler, while normal queries proceed to the emergency orchestrator agent. The orchestrator coordinates with two specialized sub-agents: the emergency classifier, which determines the category and severity, and the protocol agent, which pulls emergency steps using our custom MCP server. The results go to the safety advisor node, which triggers a human-in-the-loop approval if the emergency is high severity, and finally logs the drill status through the logger node.
+
+[2:00 — LIVE DEMO]
+(switch to playground at localhost:18081)
+Let's see it in action. I'm going to enter a test scenario in the playground: "There is strong smell of gas in the kitchen, and my phone number is 0300-1234567."
+Watch how the security checkpoint automatically redacts the Pakistani phone number to protect user privacy.
+Next, the emergency classifier identifies this as a GAS_LEAK with CRITICAL severity.
+Because it's critical, the safety advisor prompts us with a human-in-the-loop check: "Would you like me to send a simulated emergency SMS/alert to your primary family contact?"
+If we type "yes", it confirms the SMS is sent and outputs the full response protocol, including instructions to immediately evacuate, not touch any switches, and call local numbers.
+
+[3:00 — SECURITY & MCP]
+The security checkpoint uses regex scrubbing to block phone numbers and emails, checks for prompt injection keywords, and logs every execution to a secure JSON audit log. Our MCP server exposes tools to retrieve emergency protocols, look up Pakistani emergency numbers, query the family profile, and log drill events cleanly.
+
+[3:30 — IMPACT / CLOSE]
+This agent empowers families to practice safety drills, helping them memorize critical escape steps and verify contacts before a real disaster strikes. Thank you, and let's keep our families safe.

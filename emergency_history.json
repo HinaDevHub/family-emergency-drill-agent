@@ -1,0 +1,16 @@
+[
+  {
+    "profile_id": "default",
+    "category": "GAS_LEAK",
+    "severity": "HIGH",
+    "timestamp": "2024-05-15T10:30:00Z",
+    "status": "Logged"
+  },
+  {
+    "profile_id": "family_001",
+    "category": "MEDICAL",
+    "severity": "CRITICAL",
+    "timestamp": "2024-07-30T10:00:00Z",
+    "status": "Logged"
+  }
+]
