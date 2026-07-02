@@ -95,7 +95,7 @@ graph TD
 ## Push to GitHub
 
 1. Create a new repo at https://github.com/new
-   - Name: `family-emergency-drill`
+   - Name: `family-emergency-drill-agent`
    - Visibility: Public or Private
    - Do NOT initialize with README (you already have one)
 
@@ -104,9 +104,9 @@ graph TD
    cd family-emergency-drill
    git init
    git add .
-   git commit -m "Initial commit: family-emergency-drill ADK agent"
+   git commit -m "Initial commit: family-emergency-drill-agent ADK agent"
    git branch -M main
-   git remote add origin https://github.com/<your-username>/family-emergency-drill.git
+   git remote add origin https://github.com/<your-username>/family-emergency-drill-agent.git
    git push -u origin main
    ```
 
@@ -129,6 +129,6 @@ graph TD
 ### Cover Banner
 ![Cover Banner](assets/cover_page_banner.png)
 
-## Demo Script
 
-The narration script for the project demo can be found in [DEMO_SCRIPT.txt](file:///d:/ADK%20workspace/family-emergency-drill/DEMO_SCRIPT.txt).
+
+
