@@ -3,7 +3,7 @@
 An interactive, secure multi-agent concierge system built on the ADK 2.0 framework to help families practice emergency drills, receive personalized response protocols, and simulate safety notification workflows.
 
 # Submission Links:
-# Github repositoriy link: 
+# Github repositoriy link: https://github.com/HinaDevHub/family-emergency-drill-agent
 # YouTube Demo-link: https://youtu.be/UeiCCZMsSQQ
 ## Prerequisites
 
