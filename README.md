@@ -2,6 +2,9 @@
 
 An interactive, secure multi-agent concierge system built on the ADK 2.0 framework to help families practice emergency drills, receive personalized response protocols, and simulate safety notification workflows.
 
+# Submission Links:
+# Github repositoriy link: 
+# YouTube Demo-link: https://youtu.be/UeiCCZMsSQQ
 ## Prerequisites
 
 - **Python**: Version 3.11 to 3.13.
@@ -106,7 +109,7 @@ graph TD
    git add .
    git commit -m "Initial commit: family-emergency-drill-agent ADK agent"
    git branch -M main
-   git remote add origin https://github.com/<your-username>/family-emergency-drill-agent.git
+   git remote add origin https://github.com/HinaDevHub/family-emergency-drill-agent.git
    git push -u origin main
    ```
 
