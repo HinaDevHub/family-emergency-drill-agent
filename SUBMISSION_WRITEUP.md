@@ -65,3 +65,7 @@ The execution suspends until the user confirms, simulating real-world safety esc
 
 ## Impact / Value Statement
 The Family Emergency Drill Agent bridges the gap between static response instructions and dynamic, contextual action. It allows families to practice critical safety maneuvers in seconds, ensuring that when every second counts, panic is replaced by prepared execution.
+
+# Submission Links:
+# Github repositoriy link: https://github.com/HinaDevHub/family-emergency-drill-agent
+# YouTube Demo-link: https://youtu.be/UeiCCZMsSQQ
